@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shop - Hostel Mart</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">🏠 Hostel Mart</div>
+    <nav class="nav-links">
+      <a href="index.html">Landing</a>
+      <a href="home.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html" class="btn btn-small">Login</a>
+    </nav>
+    <div class="cart-indicator">
+      Cart: <span id="cartCount">0</span> items
+    </div>
+  </header>
+
+  <main class="page">
+    <h1>Hostel Shop</h1>
+    <p class="muted-text">All items are from the single hostel shop (hardcoded in data.js).</p>
+
+    <section id="productsGrid" class="grid three-columns"></section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="data.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>

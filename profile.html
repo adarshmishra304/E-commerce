@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile - Hostel Mart</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">🏠 Hostel Mart</div>
+    <nav class="nav-links">
+      <a href="index.html">Landing</a>
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="profile.html" class="active">Profile</a>
+      <a href="login.html" class="btn btn-small">Login</a>
+    </nav>
+    <div class="cart-indicator">
+      Cart: <span id="cartCountProfile">0</span> items
+    </div>
+  </header>
+
+  <main class="page">
+    <h1>Your Profile</h1>
+
+    <section class="card">
+      <h2>User Information</h2>
+      <div id="userInfo"></div>
+    </section>
+
+    <section class="card">
+      <h2>Cart Items</h2>
+      <p class="muted-text">These items are added to your cart but not yet claimed.</p>
+      <div id="cartItems"></div>
+    </section>
+
+    <section class="card">
+      <h2>Claimed / Bought Items</h2>
+      <p class="muted-text">Items you have claimed/bought from the shop.</p>
+      <div id="claimedItems"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="data.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>

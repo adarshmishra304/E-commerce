@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Hostel Mart</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">🏠 Hostel Mart</div>
+    <nav class="nav-links">
+      <a href="index.html">Landing</a>
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html" class="btn btn-small active">Login</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1>Hostel Login</h1>
+    <p class="muted-text">Just a simple fake login. Your details are stored in localStorage.</p>
+
+    <form id="loginForm" class="card form-card">
+      <label>
+        Name
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Room Number
+        <input type="text" name="room" required />
+      </label>
+      <label>
+        Hostel Block
+        <input type="text" name="block" placeholder="A / B / C ..." required />
+      </label>
+      <label>
+        Phone Number
+        <input type="tel" name="phone" required />
+      </label>
+      <button type="submit" class="btn full-width">Login</button>
+    </form>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
