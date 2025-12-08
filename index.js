@@ -5,4 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const userRaw = localStorage.getItem("hostelUser");
   // You could show some message or redirect if you want
   // For now, we just leave the landing page simple.
+   if (userRaw) {
+    // If logged in → skip landing page
+    window.location.href = "home.html";
+  }
 });
