@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const user = {
       name: formData.get("name").trim(),
       room: formData.get("room").trim(),
-      block: formData.get("block").trim(),
+      // block: formData.get("block").trim(),
       phone: formData.get("phone").trim(),
       createdAt: new Date().toISOString(),
     };

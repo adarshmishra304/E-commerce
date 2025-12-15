@@ -1,24 +1,24 @@
-// Hardcoded products for the single hostel shop
+
 const PRODUCTS = [
   {
     id: 1,
     name: "Maggi Noodles (Single Pack)",
     category: "Snacks",
-    price: 25,
+    price: 20,
     description: "Instant noodles for late-night hunger.",
   },
   {
     id: 2,
     name: "Cold Drink (500ml)",
     category: "Beverage",
-    price: 40,
+    price: 25,
     description: "Chilled soft drink from the hostel shop fridge.",
   },
   {
     id: 3,
     name: "Notebook (200 pages)",
     category: "Stationery",
-    price: 60,
+    price: 50,
     description: "Ruled notebook for daily notes.",
   },
   {

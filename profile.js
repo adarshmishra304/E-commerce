@@ -59,7 +59,7 @@ function renderUserInfo() {
       <div class="list-item-main">
         <div class="list-item-title">${user.name}</div>
         <div class="list-item-sub">
-          Room ${user.room}, Block ${user.block}<br/>
+          Room ${user.room}<br/>
           Phone: ${user.phone}
         </div>
       </div>
@@ -100,6 +100,8 @@ function renderCartItems() {
       </div>
     `;
     ul.appendChild(li);
+    renderCartTotal();
+
   });
 
   cartEl.innerHTML = "";
@@ -107,6 +109,42 @@ function renderCartItems() {
 
   cartEl.addEventListener("click", handleCartClick, { once: true });
 }
+
+function renderCartTotal() {
+  const el = document.getElementById("cartTotal");
+  if (!el) return;
+
+  const cart = getCart();
+  let total = 0;
+
+  cart.forEach(item => {
+    const product = PRODUCTS.find(p => p.id === item.productId);
+    if (product) {
+      total += product.price * item.quantity;
+    }
+  });
+
+  el.textContent = total;
+}
+
+function renderClaimedTotal() {
+  const el = document.getElementById("claimedTotal");
+  if (!el) return;
+
+  const orders = getOrders();
+  let total = 0;
+
+  orders.forEach(order => {
+    const product = PRODUCTS.find(p => p.id === order.productId);
+    if (product) {
+      total += product.price * order.quantity;
+    }
+  });
+
+  el.textContent = total;
+}
+
+
 
 function handleCartClick(e) {
   const target = e.target;
@@ -191,12 +229,21 @@ function renderClaimedItems() {
 
   claimedEl.innerHTML = "";
   claimedEl.appendChild(ul);
+  renderClaimedTotal();
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // requireLogin();
+  // renderCartCount();
+  // renderUserInfo();
+  // renderCartItems();
+  // renderClaimedItems();
   requireLogin();
   renderCartCount();
   renderUserInfo();
   renderCartItems();
   renderClaimedItems();
+  renderCartTotal();
+  renderClaimedTotal();
 });

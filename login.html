@@ -9,8 +9,11 @@
   <header class="site-header">
     <div class="logo">🏠 Hostel Mart</div>
     <nav class="nav-links">
-      <a href="index.html">Landing</a>
-      <a href="home.html">Home</a>
+      <!-- <a href="index.html" class="active">Landing</a> -->
+       <a href="index.html"  id="landingLink">Home</a>
+
+      <!-- <a href="home.html">Home</a> -->
+       <a href="home.html" id="homeLink">Home</a>
       <a href="shop.html">Shop</a>
       <a href="profile.html">Profile</a>
       <!-- <a href="login.html" class="btn btn-small active">Login</a> -->
@@ -22,7 +25,7 @@
 
   <main class="page">
     <h1>Hostel Login</h1>
-    <p class="muted-text">Just a simple fake login. Your details are stored in localStorage.</p>
+    <p class="muted-text">Enter your details to login.</p>
 
     <form id="loginForm" class="card form-card">
       <label>
@@ -33,10 +36,10 @@
         Room Number
         <input type="text" name="room" required />
       </label>
-      <label>
+      <!-- <label>
         Hostel Block
         <input type="text" name="block" placeholder="A / B / C ..." required />
-      </label>
+      </label> -->
       <label>
         Phone Number
         <input type="tel" name="phone" required />

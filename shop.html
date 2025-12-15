@@ -9,13 +9,15 @@
   <header class="site-header">
     <div class="logo">🏠 Hostel Mart</div>
     <nav class="nav-links">
-      <a href="index.html">Landing</a>
-      <a href="home.html">Home</a>
+      <!-- <a href="index.html" class="active">Landing</a> -->
+       <a href="index.html"  id="landingLink">Home</a>
+
+      <a href="home.html" id="homeLink">Home</a>
       <a href="shop.html" class="active">Shop</a>
       <a href="profile.html">Profile</a>
       <!-- <a href="login.html" class="btn btn-small">Login</a> -->
       <!-- <a id="authButton" class="btn btn-small">Login</a> -->
-      <a id="authButton" class="btn btn-small">Login</a>
+      <a id="authButton"  class="btn btn-small">Login</a>
 
     </nav>
     <div class="cart-indicator">
@@ -25,7 +27,7 @@
 
   <main class="page">
     <h1>Hostel Shop</h1>
-    <p class="muted-text">All items are from the single hostel shop (hardcoded in data.js).</p>
+    <p class="muted-text">All items are from the single hostel shop.</p>
 
     <section id="productsGrid" class="grid three-columns"></section>
   </main>

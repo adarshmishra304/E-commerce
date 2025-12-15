@@ -312,6 +312,32 @@ input:focus {
 
 /* Cart & profile lists */
 
+
+.total-box {
+  margin: 10px 0;
+  padding: 10px;
+  
+  background: rgba(255, 237, 200, 0.9);
+  border: 1px solid rgba(210, 170, 100, 0.7);
+  border-radius: 6px;
+  font-size: 15px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cart-total-right {
+  margin: 0;
+  min-width: 140px;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
 .list {
   list-style: none;
   display: flex;

@@ -9,8 +9,11 @@
   <header class="site-header">
     <div class="logo">🏠 Hostel Mart</div>
     <nav class="nav-links">
-      <a href="index.html">Landing</a>
-      <a href="home.html">Home</a>
+      <!-- <a href="index.html" class="active">Landing</a> -->
+       <a href="index.html" id="landingLink">Home</a>
+
+      <!-- <a href="home.html">Home</a> -->
+       <a href="home.html" id="homeLink">Home</a>
       <a href="shop.html">Shop</a>
       <a href="profile.html" class="active">Profile</a>
       <!-- <a href="login.html" class="btn btn-small">Login</a> -->
@@ -30,16 +33,35 @@
     </section>
 
     <section class="card">
+       <div class="card-header">
+        <div>
       <h2>Cart Items</h2>
       <p class="muted-text">These items are added to your cart but not yet claimed.</p>
-      <div id="cartItems"></div>
-    </section>
+      </div><div class="total-box cart-total-right">
+      <strong>Cart Total: ₹<span id="cartTotal">0</span></strong>
+    </div>
+  </div>
+
+  <div id="cartItems"></div>
+</section>
 
     <section class="card">
+  <div class="card-header">
+    <div>
       <h2>Claimed / Bought Items</h2>
-      <p class="muted-text">Items you have claimed/bought from the shop.</p>
-      <div id="claimedItems"></div>
-    </section>
+      <p class="muted-text">
+        Items you have claimed/bought from the shop.
+      </p>
+    </div>
+
+    <div class="total-box cart-total-right">
+    <strong>Total Spent: ₹<span id="claimedTotal">0</span></strong>
+  </div>
+  </div>
+
+  <div id="claimedItems"></div>
+</section>
+
   </main>
 
   <div id="toast" class="toast hidden"></div>
